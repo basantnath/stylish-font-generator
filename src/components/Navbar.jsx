@@ -54,14 +54,14 @@ export default React.memo(function Navbar() {
   );
 
   const SocialIcons = ({ links }) => (
-    <div className="hidden md:flex items-center justify-end space-x-5 bg-white px-4 py-2 rounded-2xl">
+    <div className="hidden md:flex items-center justify-end space-x-5  px-4 py-2 rounded-2xl">
       {links.map((social) => {
         const Icon = social.icon;
         return (
           <a
             key={social.name}
             href={social.href}
-            className="text-indigo-600 hover:text-indigo-700 transform hover:scale-120 transition-transform duration-300"
+            className="text-white transform hover:scale-120 transition-transform duration-300"
             aria-label={social.name}
             target="_blank"
             rel="noopener noreferrer"
